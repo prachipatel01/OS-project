@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Page Replacement Algorithms</h1>
+        <p class="lead">In an operating system that uses paging for memory management, a page replacement algorithm is needed to decide which page needs to be replaced when new page comes in.</p>
+      </div>
+    </div>
+
+
+
+    <div class="font_update FIFO">
+      <div class="container">
+        <h2>First In First Out:</h2><br>
+        <div class="row">
+
+          <div class="col-6">
+            <div class="input-group">
+              <input type="text" class="form-control userinput1" placeholder="Enter maximum number of frames" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+              <div class="input-group-append" id="button-addon4" style="width: 200px">
+                <a class="btn btn-primary Enter" href="#" role="button">Enter</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-6">
+            <div class="input-group">
+              <input type="text" class="form-control userinput2" placeholder="Add page number in sequence one by one" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+              <div class="input-group-append" id="button-addon4" style="width: 200px">
+                <a class="btn btn-primary Add" href="#" role="button">Add</a>
+                <a class="btn btn-primary refresh" href="#" role="button">Refresh</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6">
+                <br><p>Frames:<br></p>
+          </div>
+          <div class="col-6">
+                <br><h1>
+                  <ul class="blocks">
+                  <!--
+                    <span class="badge badge-secondary output1" style="visibility: hidden;">New</span>
+                    <span class="badge badge-secondary output2" style="visibility: hidden;">New</span>
+                    <span class="badge badge-secondary output3" style="visibility: hidden;">New</span>
+                  -->
+                </ul>
+                </h1>
+          </div>
+
+          <div class="col-6">
+                <br><p>Number of page faults:</p>
+          </div>
+          <div class="col-6">
+                <br><p id="Calculate"></p>
+          </div>
+
+        </div>
+    </div>
+
+
+<!--
+    <div class="font_update LIFO">
+      <div class="container">
+        <h2>Last In First Out:</h2><br>
+        <div class="row">
+
+          <div class="col-6">
+            <div class="input-group">
+              <input type="text" class="form-control userinput3" placeholder="Enter maximum number of frames" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+              <div class="input-group-append" id="button-addon4" style="width: 200px">
+                <a class="btn btn-primary Enter1" href="#" role="button">Enter</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-6">
+            <div class="input-group">
+              <input type="text" class="form-control userinput4" placeholder="Add page number in sequence one by one" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+              <div class="input-group-append" id="button-addon4" style="width: 200px">
+                <a class="btn btn-primary Add1" href="#" role="button">Add</a>
+                <a class="btn btn-primary refresh1" href="#" role="button">Refresh</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6">
+                <br><p>Frames:<br></p>
+          </div>
+          <div class="col-6">
+                <br><h1>
+                  <ul class="blocks1">
+                  
+                </ul>
+                </h1>
+          </div>
+
+          <div class="col-6">
+                <br><p>Number of page faults:</p>
+          </div>
+          <div class="col-6">
+                <br><p id="Calculate1"></p>
+          </div>
+
+        </div>
+     </div>
+-->
+
+
+
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+body{
+  background-color: #ff5c33;
+}
+.jumbotron
+{
+  background-color: #ffad99
+}
+
+
+p{
+  padding: 5px;
+}
+
+.font_update{
+	font-family: sans-serif;
+
+}
+
+.badge{
+	background-color: white;
+	color: black;
+	margin: 10px;
+}
