@@ -4,6 +4,7 @@ var Add= document.getElementsByClassName("Add")[0];
 var Enter= document.getElementsByClassName("Enter")[0];
 var refresh= document.getElementsByClassName("refresh")[0];
 //var blocks=document.getElementsByClassName("blocks")[0];
+var input_list=document.getElementsByClassName("input-list")[0];
 var list=document.getElementsByClassName("list")[0];
 
 var array=[];
@@ -105,6 +106,7 @@ function Refresh() {
 	page_fault=0;
 	element_inside=0;
 	//blocks.innerHTML="";
+	input_list.innerHTML="";
 	list.innerHTML="";
 	document.getElementById("Calculate").innerHTML = "";
 	frames=-1;
@@ -140,6 +142,13 @@ function add_element(value){
 	//blocks.appendChild(newElement);
 }
 
+function add_element_input(value){
+	//console.log("in add_ele_inp");
+    let newElement=document.createElement('span');
+	newElement.className="badge badge-secondary";
+	newElement.innerText=value;
+	return newElement;
+}
 
 function create(){
 	let newElement=document.createElement('li');
@@ -171,6 +180,11 @@ function create(){
 
 }
 
+function input_frames(){
+	//console.log("in inp_frames");
+    input_list.appendChild(add_element_input(input2.value));
+    //input2.value="";
+}
 
 
 function addListAfterClick() {
@@ -186,6 +200,7 @@ function addListAfterClick() {
 		{
 			inp_2=input2.value;
 			//FIFO();
+			input_frames();
 			create();
 		}
 	}
@@ -203,6 +218,7 @@ function addListAfterKeypress(event) {
 		{
 			inp_2=input2.value;
 			//FIFO();
+			input_frames();
 			create();
 		}
 	}
