@@ -28,7 +28,8 @@ p{
 }
 
 .list-area{
-	min-width: 1000px;
+	padding-right: 100px;
+	max-width: 1000px;
 	margin-left: 100px;
 }
 
