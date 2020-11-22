@@ -17,7 +17,7 @@
 					<!-- Inner -->
 						<div class="inner">
 							<header>
-								<h1><a href="index.html" id="logo">Least Recently Used</a></h1>
+								<h1>Least Recently Used</h1>
 							</header>
 						</div>
 
@@ -25,7 +25,7 @@
 						<nav id="nav">
 							<ul>
 								<li><a href="index.html">Home</a></li>
-								
+
 								<li><a href="lru.html">LRU</a></li>
 								<li><a href="opr.html">OPR</a></li>
 								<li><a href="fifo.html">FIFO</a></li>
@@ -42,53 +42,36 @@
 					<div class="container">
 						<article id="main" class="special">
 							<header>
-								<h2><a href="#">LRU:</a></h2>
+								<h2>LRU:</h2>
 								<p>
-									TIn this algorithm page will be replaced which is least recently used.
+									<a href="./LRU_page.html">Click here to try the algorithm</a>
 
 								</p>
 							</header>
-							
+
 							<p>
-								Commodo id natoque malesuada sollicitudin elit suscipit. Curae suspendisse mauris posuere accumsan massa
-								posuere lacus convallis tellus interdum. Amet nullam fringilla nibh nulla convallis ut venenatis purus
-								lobortis. Auctor etiam porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum
-								consequat integer interdum integer purus sapien. Nibh eleifend nulla nascetur pharetra commodo mi augue
-								interdum tellus. Ornare cursus augue feugiat sodales velit lorem. Semper elementum ullamcorper lacinia
-								natoque aenean scelerisque vel lacinia mollis quam sodales congue.
+								In operating systems that use paging for memory management, page replacement algorithm are needed to decide which page needed to be replaced when new page comes in. Whenever a new page is referred and not present in memory, page fault occurs and Operating System replaces one of the existing pages with newly needed page. Different page replacement algorithms suggest different ways to decide which page to replace. The target for all algorithms is to reduce number of page faults.
+								<br>
+									In Least Recently Used (LRU) algorithm is a Greedy algorithm where the page to be replaced is least recently used. The idea is based on locality of reference, the least recently used page is not likely.
 							</p>
 							<section>
 								<header>
-									<h3>Ultrices tempor sagittis nisl</h3>
+									<h3>For example</h3>
 								</header>
 								<p>
-									Nascetur volutpat nibh ullamcorper vivamus at purus. Cursus ultrices porttitor sollicitudin imperdiet
-									at pretium tellus in euismod a integer sodales neque. Nibh quis dui quis mattis eget imperdiet venenatis
-									feugiat. Neque primis ligula cum erat aenean tristique luctus risus ipsum praesent iaculis. Fermentum elit
-									fringilla consequat dis arcu. Pellentesque mus tempor vitae pretium sodales porttitor lacus. Phasellus
-									egestas odio nisl duis sociis purus faucibus morbi. Eget massa mus etiam sociis pharetra magna.
-								</p>
-								<p>
-									Eleifend auctor turpis magnis sed porta nisl pretium. Aenean suspendisse nulla eget sed etiam parturient
-									orci cursus nibh. Quisque eu nec neque felis laoreet diam morbi egestas. Dignissim cras rutrum consectetur
-									ut penatibus fermentum nibh erat malesuada varius.
-								</p>
-							</section>
-							<section>
-								<header>
-									<h3>Augue euismod feugiat tempus</h3>
-								</header>
-								<p>
-									Pretium tellus in euismod a integer sodales neque. Nibh quis dui quis mattis eget imperdiet venenatis
-									feugiat. Neque primis ligula cum erat aenean tristique luctus risus ipsum praesent iaculis. Fermentum elit
-									ut nunc urna volutpat donec cubilia commodo risus morbi. Lobortis vestibulum velit malesuada ante
-									egestas odio nisl duis sociis purus faucibus morbi. Eget massa mus etiam sociis pharetra magna.
+									Let say the page reference string 7 0 1 2 0 3 0 4 2 3 0 3 2 . Initially we have 4 page slots empty.<br>
+									Initially all slots are empty, so when 7 0 1 2 are allocated to the empty slots —> 4 Page faults
+									0 is already their so —> 0 Page fault.<br>
+									when 3 came it will take the place of 7 because it is least recently used —>1 Page fault
+									0 is already in memory so —> 0 Page fault.<br>
+									4 will takes place of 1 —> 1 Page Fault <br>
+									Now for the further page reference string —> 0 Page fault because they are already available in the memory.
 								</p>
 							</section>
 						</article>
 						<hr />
 						<div class="row">
-							
+
 							<article class="col-4 col-12-mobile special" style="width: 100%;">
 								<a href="./LRU_page.html" class="image featured"><img src="images/pic08.jpg" alt="" height="300px"/></a>
 								<header>
@@ -98,7 +81,7 @@
 									Click here to try out an example.
 								</p>
 							</article>
-							
+
 						</div>
 					</div>
 
